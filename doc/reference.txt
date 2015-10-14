@@ -1,0 +1,5 @@
+developer.android.com/reference/android/net/wifi/WifiManager.html
+https://source.android.com/source/using-eclipse.html
+https://github.com/android/platform_development/blob/master/ide/eclipse/android-formatting.xml
+http://www.sureshjoshi.com/mobile/android-ndk-in-android-studio-with-swig/
+http://www.apkbus.com/android-181485-1-1.html

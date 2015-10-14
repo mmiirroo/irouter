@@ -1,0 +1,83 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.3'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'eclipse'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    
+     sourceSets {
+		main {
+			manifest {
+				srcFile 'AndroidManifest.xml'
+			}
+		java {
+			srcDir 'src'
+			}
+		res {
+			srcDir 'res'
+			}
+		assets {
+			srcDir 'assets'
+			}
+		resources {
+			srcDir 'src'
+			}
+		}
+	}
+    
+     packagingOptions {
+		exclude 'META-INF/ASL2.0'
+		exclude 'META-INF/LICENSE'
+		exclude 'META-INF/license.txt'
+		exclude 'META-INF/NOTICE'
+		exclude 'META-INF/notice.txt'
+	}
+	
+	lintOptions {
+		// simple xml fails lint checks because it references javax.xml.stream
+		abortOnError false
+	}
+
+	buildTypes {
+	    debug {
+            buildConfigField "boolean", "HAS_PROTOTYPE_FEATURE", "true"
+	    }
+	    release {
+            buildConfigField "boolean", "HAS_PROTOTYPE_FEATURE", "false"
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-project.txt'), 'proguard.cfg'
+	    }
+	}
+}
+
+repositories { 
+    mavenCentral()
+    jcenter()
+    maven {
+        url 'http://repo.spring.io/milestone'
+    }
+}
+
+dependencies {
+    compile 'org.jsoup:jsoup:1.7.2'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+task copyJars(type:Copy){  
+    from configurations.compile  
+    into 'libs'  
+}  

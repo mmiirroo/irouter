@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cckd.irouter.MainActivity" >
+
+    <TextView
+        android:id="@+id/TextViewRouterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10pt"
+        android:layout_marginTop="20pt"
+        android:background="@null"
+        android:text="" >
+    </TextView>
+
+    <Button
+        android:id="@+id/main_loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewRouterName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15pt"
+        android:text="@string/not_login" >
+    </Button>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_below="@+id/main_loginButton"
+        android:id="@+id/main_compositeWifiTestImage">
+    <Button
+        android:id="@+id/main_wifi_speed_test"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_weight="1"
+        android:text="wifi测试"
+        android:drawableTop="@drawable/window"
+        >
+    </Button>
+    
+    <Button
+        android:id="@+id/main_wifiTestImage2"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_weight="1"
+        android:text="网络优化"
+        android:drawableTop="@drawable/window"
+        >   
+    </Button>
+    
+    <Button
+        android:id="@+id/main_wifiTestImage3"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_weight="1"
+        android:text="网络诊断"
+        android:drawableTop="@drawable/window"
+        >
+    </Button>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/main_guestaccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="访客上网"
+        android:layout_below="@+id/main_compositeWifiTestImage"
+        android:drawableTop="@drawable/window"
+        >
+    </Button>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_below="@+id/main_guestaccess"
+        android:id="@+id/main_composite">
+    <Button
+        android:id="@+id/main_network"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_weight="1"
+        android:text="网络"
+        android:drawableTop="@drawable/window"
+        > 
+    </Button>
+    
+    <Button
+        android:id="@+id/main_mydevice"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_weight="1"
+        android:text="我的设备"
+        android:drawableTop="@drawable/window"
+        >
+    </Button>
+  
+      <Button
+        android:id="@+id/main_more"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_weight="1"
+        android:text="更多"
+        android:drawableTop="@drawable/window"
+        >
+    </Button>
+    </LinearLayout>
+</RelativeLayout>

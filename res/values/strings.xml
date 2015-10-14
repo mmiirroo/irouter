@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">irouter</string>
+    <string name="account_name">账户</string>
+    <string name="already_login">已登录</string>
+    <string name="not_login">未登录</string>
+    <string name="device_list_check">查看终端设备</string>
+    <string name="device_my_router">我的路由器</string>
+    <string name="device_speed_control">网速控制</string>
+    <string name="device_child_lock">儿童锁</string>
+    <string name="device_file_share">文件分享</string>
+    <string name="wifi_test">wifi测试</string>
+    <string name="title_my_router_activity">MyRouterActivity</string>
+    <string name="title_device_my_activity">DeviceMyActivity</string>
+    <string name="title_device_list_activity">DeviceListActivity</string>
+    <string name="title_account_login_activity">LoginActivity</string>
+    <string name="instant_network_speed_text">即时网速</string>
+    <string name="title_wifi_speed_test_activity">WifiSpeedTestActivity</string>
+    <string name="wifidiagrestitle">诊断完毕</string>
+    <string name="diagnosisObj">XXX</string>
+    <string name="wifi_speed_test_url">http://t0.gstatic.com/images?q=tbn:ANd9GcTpB3yP2GNJzOLBL8raKVc42OEsJpAh4a8pnc9a6xy85BE1Tvx2Cm_SPiyG</string>
+    <string name="semicolon">:</string>
+    <string name="TODO">TODO</string>
+    <string name="ok">确定</string>
+        <string name="cancel">取消</string>
+    
+    <string name="wifi_setting">WIFI设置</string>
+    <string name="wifi_name">WIFI名称</string>    
+    <string name="wifi_password">WIFI密码</string>
+    
+    <string name="admin_password_modify">修改管理员密码</string>
+    <string name="new_admin_password">请输入新密码</string>
+    <string name="new_admin_password_confirm">请再次输入新密码</string>
+    <string name="commit">提交</string>
+    
+    <string name="cancel_safe_check">取消体检交</string>
+
+    <string name="router_detail_info">路由器详细信息</string>
+    <string name="safe_check">安全体检</string>
+    <string name="router_restore_backup">路由器的配置备份和恢复</string>
+    <string name="restart_router">重启路由器</string>
+
+    
+</resources>

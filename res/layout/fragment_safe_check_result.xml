@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ImageView_WifiPasswordStrength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Wifi密码强度"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/TextView_AdminPasswordStrength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="管理员密码强度"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView_WifiNetworkName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="无线网络名隐藏"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/TextView_FirewallConfiguration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="防火墙配置" />
+    
+    <TextView
+        android:id="@+id/TextView_InternetLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="外网登录权限" />
+    
+        
+    <TextView
+        android:id="@+id/TextView_SafeCheckPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="体检等分：" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextViewDeviceCheckList"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:text="相当于20M带宽" />
+
+    <TextView
+        android:id="@+id/TextViewMyRouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.9mb/s" />
+
+    <TextView
+        android:id="@+id/TextView_RateControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="平均网速" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重新测速" />
+
+</LinearLayout>

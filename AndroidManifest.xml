@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.irouter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".network.speedtest.WifiSpeedTestActivity"
+            android:label="@string/title_wifi_speed_test_activity" >
+            <intent-filter>
+                <action android:name="com.irouter.network.speedtest.WifiSpeedTestActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".account.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_account_login_activity" >
+            <intent-filter>
+                <action android:name="com.irouter.account.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.irouter.device.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_device_list_activity"
+            android:parentActivityName="com.router.account.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.router.account.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="com.irouter.device.DeviceListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.irouter.device.DeviceMyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_device_my_activity"
+            android:parentActivityName="com.router.account.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.router.account.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="com.irouter.device.DeviceMyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.irouter.device.MyRouterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_my_router_activity" >
+            <intent-filter>
+                <action android:name="com.irouter.device.MyRouterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

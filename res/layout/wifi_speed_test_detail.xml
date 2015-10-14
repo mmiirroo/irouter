@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/wifi_speed_test_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wifi_speed_test_detail" />
+
+    <TextView
+        android:id="@+id/TextViewDeviceCheckList"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:text="正在测速，需要15秒左右的时间..." />
+    <TextView
+        android:id="@+id/wifi_speedtest_progress"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:text="进度" />
+
+    <TextView
+        android:id="@+id/instant_network_speed_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+    
+    <TextView
+        android:id="@+id/instant_network_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instant_network_speed_text" />
+
+</LinearLayout>

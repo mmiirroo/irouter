@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextViewDeviceCheckList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正在检测，请稍后…" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="33dp"
+            android:layout_height="31dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:src="@drawable/network_diagnosis" />
+
+        <TextView
+            android:id="@+id/TextViewMyRouter"
+            android:layout_column="1"
+            android:layout_gravity="right|top"
+            android:layout_row="0"
+            android:text="正在检验本机wifi开关" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="33dp"
+            android:layout_height="31dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:src="@drawable/network_diagnosis" />
+
+        <TextView
+            android:id="@+id/TextView_RateControl"
+            android:layout_column="1"
+            android:layout_gravity="right|top"
+            android:layout_row="1"
+            android:text="正在检验本机IP" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="33dp"
+            android:layout_height="31dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="2"
+            android:src="@drawable/network_diagnosis" />
+
+        <TextView
+            android:id="@+id/TextView_ChildLock"
+            android:layout_column="1"
+            android:layout_gravity="right|top"
+            android:layout_row="2"
+            android:text="正在检验站点联通性" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="33dp"
+            android:layout_height="31dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="3"
+            android:src="@drawable/network_diagnosis" />
+
+        <TextView
+            android:id="@+id/TextView_FileShare"
+            android:layout_column="1"
+            android:layout_gravity="right|top"
+            android:layout_row="3"
+            android:text="正在检验网络质量检测" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:text="重新诊断" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:text="修复" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:text="完成" />
+    </GridLayout>
+
+</LinearLayout>

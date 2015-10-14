@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp" >
+
+    <TextView
+        android:id="@+id/wifi_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_name" />
+
+    <TextView
+        android:id="@+id/wifi_name_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/wifi_name_label" />
+
+    <TextView
+        android:id="@+id/wifi_password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wifi_name_label"
+        android:text="@string/wifi_password" />
+
+    <EditText
+        android:id="@+id/wifi_password_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wifi_name_value"
+        android:layout_toRightOf="@+id/wifi_password_label"
+        android:ems="5" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wifi_password_value"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/wifi_password_value"
+        android:layout_below="@+id/wifi_password_value"
+        android:text="@string/ok" />
+
+</RelativeLayout>
